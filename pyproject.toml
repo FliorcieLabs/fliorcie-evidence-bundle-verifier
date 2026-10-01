@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fliorcie-evidence-bundle-verifier"
+version = "0.1.0"
+description = "Offline verifier for Fliorcie local evidence bundles."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "Fliorcie Labs"}]
+dependencies = []
+
+[project.scripts]
+fl-evidence-verify = "fliorcie_evidence_bundle_verifier.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
